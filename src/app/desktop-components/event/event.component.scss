@@ -1,0 +1,108 @@
+.event {
+    min-width: 300px;
+    height: 230px;
+    background-color: #3E3E3E;
+    border-radius: 25px;
+    margin: 10px auto;
+}
+
+.event-header {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+
+.event-image {  
+    .admin-image {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid green;
+        margin: auto 0px auto 10px;
+        border: 3px solid green;
+        margin: 5px 0px auto 10px;
+    }
+}
+
+.event-title {
+    .admin-name {
+        font-size: xx-small;
+    }
+    margin-top: 15px;
+    margin-left: 10px;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+    p {
+        margin: 0px;
+    }
+}
+
+.event-main {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    height: 50%;
+    font-size: xx-small;
+    // background: #8c7e7e;
+    .event-description {
+    }
+    .event-info {
+        width: 100%;
+        .event-place {
+            float: left;
+        }
+        .event-time {
+            float: right;
+        }
+    }    
+}
+
+.event-footer {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 25px 25px;
+    .members {
+        display: flex;
+        gap: 8px;
+        // margin: 8px;
+        align-items: center;
+        // .member {
+        //     display: flex;
+        //     align-items: center;
+           
+        // }
+        .member-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        // .new-member {
+        //     border-radius: 50%;
+        //     border: 3px solid green;
+        //     width: 40px;
+        //     height: 40px;
+        //     display: flex;
+           
+        // }
+        .new-member-image {
+            border-radius: 50%;
+            border: 3px solid green;
+            /* margin: auto auto; */
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

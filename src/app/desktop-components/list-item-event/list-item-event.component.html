@@ -1,0 +1,23 @@
+
+<div class="event">
+    <img class="activity-image" [src]="'assets/icons/menu/' + event.imageName" alt="">
+    <div class="main">
+        
+        <h1>Football</h1>
+        <div class="info">
+    
+        </div>
+        <div class="participants t1">
+            <div *ngFor="let in of counter()" [ngStyle]="{'background-image': getRandomAvatar()}" class="participant">
+                +
+            </div>           
+        </div>
+        <div class="participants t2">
+            <div (mouseover)="add = !add" (mouseout)="add = !add" *ngFor="let in of counter()" [ngStyle]="{'background-image': getRandomAvatar()}" class="participant">
+                <div [hidden]="!add">
+                    +
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>

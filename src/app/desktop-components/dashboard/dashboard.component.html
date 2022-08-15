@@ -1,0 +1,76 @@
+<div class="wrapper">
+  <div class="sidebar-dark">
+    <div>
+      <img class="logo" src="assets/img/logo-dark.png" alt="" />
+    </div>
+    <div class="menu">
+      <div class="menu-item active">
+        <fa-icon class="menu-item-icon" [icon]="faHome"></fa-icon>Home
+      </div>
+      <div class="menu-item">
+        <fa-icon class="menu-item-icon" [icon]="faCalendarDays"></fa-icon>My
+        events
+      </div>
+      <div class="menu-item">
+        <fa-icon class="menu-item-icon" [icon]="faTrophy"></fa-icon>Tournaments
+      </div>
+    </div>
+  </div>
+  <div class="event-picker-dark">
+    <div class="search-bar">
+      <fa-icon
+        [styles]="{ opacity: '0.6', color: '#ECECEC' }"
+        size="sm"
+        class="search-bar-icon"
+        [icon]="faMagnifyingGlass"
+      ></fa-icon>
+      <input
+        placeholder="Search by location or topic"
+        class="search-input"
+        type="text"
+      />
+    </div>
+    <div class="title">Promotions</div>
+    <div class="promotions">
+      <div
+        class="promotion-wrapper"
+        *ngFor="let event of [1, 2, 3, 4, 5]"
+        [ngStyle]="{
+          'background-image':
+            'url(assets/img/event' + ((event % 2) + 1) + '.jfif)'
+        }"
+      >
+        <div class="promotion">
+            <div class="promotion-title">
+                <h3 class="promotion-main-title">PARTY RANCH OSIJEK</h3>
+                <h5 class="promotion-second-title">Paintball Weekend</h5>
+            </div>
+            <div class="action">
+                <h1 class="action-title">15% Off</h1>
+            </div>
+        </div>
+        <!-- <img class="image-event" [src]="'assets/img/event' + event%2 + '.jfif'" alt=""> -->
+        <!-- <div class="event-header">
+
+                    <div class="event-image"></div>
+                    <div class="event-title"></div>
+                </div>
+                <div class="event-main"></div>
+                <div class="event-footer"></div> -->
+      </div>
+    </div>
+    <div class="title">Events near your location</div>
+    <div class="tags">
+      <div class="tag" *ngFor="let tag of [1, 2, 3, 4]">
+        <img class="tag-image" [src]="'assets/img/tag' + tag + '.png'" alt="" />
+      </div>
+    </div>
+    <div class="events">
+     <app-event *ngFor="let event of [1, 2, 3, 4]"></app-event>
+     
+    </div>
+  </div>
+  <div class="profile-dark">
+    <app-profile></app-profile>
+  </div>
+</div>

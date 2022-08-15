@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 70vw;
+  margin: 17px auto;
+  background-color: transparent;
+}
+
+.sport-image {
+  width: 56px;
+  padding: 0 5px;
+  border: 1px solid #7c43ff4d;
+  border-radius: 4px;
+  margin: 0 3px;
+
+  &:hover {
+    // transition: .3s ;
+    border: 3px solid #e4b1fe;
+    margin: 0 1px;
+  }
+
+  &.active {
+    border: 3px solid #ae2dff;
+    margin: 0 1px;
+  }
+}
+// .masonry-item {
+//   width: 200px;
+// }
+
+// .activities-image {
+//     width: 200px;
+// }
+
+// .container {
+//     //width: 30vw;
+// }
+
+// .wrapper {
+
+// }
+
+.activites-wrapper {
+    width: 80vw;
+    display: flex;
+    margin: 20px auto 20px auto;
+}
+
+.activity-line {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    // background-color: rgb(random(255), random(255), random(255));
+}
+
+.activity-image {
+    margin: 0px auto 0px auto;
+    width: 200px;
+    backdrop-filter: blur(6px);
+}
+
+.activity {
+    margin: 0px auto;
+}
+
+.loading {
+    // width: 200px;
+    // height: 100px;
+    // background: transparent url('./../../../assets/icons/menu/loader.gif') center no-repeat;
+  }

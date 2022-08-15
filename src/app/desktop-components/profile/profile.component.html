@@ -1,0 +1,64 @@
+<div class="info">
+  <img
+    src="https://thispersondoesnotexist.com/image"
+    class="profile-image"
+    alt=""
+  />
+  <h4 class="name">Jhon Doe</h4>
+  <p class="description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis autem quam
+    unde sunt iusto!
+  </p>
+
+  <div class="interests">
+    Interests
+    <div class="tags">
+      <img class="tag-image" src="assets/img/voleyball.png" alt="" />
+      <img class="tag-image" src="assets/img/field.png" alt="" />
+      <img class="tag-image" src="assets/img/football.png" alt="" />
+    </div>
+  </div>
+</div>
+<div class="upcoming">
+  <div style="clear: both">
+    <p class="upcoming-title">Upcoming events</p>
+    <a class="view-all">View all</a>
+  </div>
+  <div *ngFor="let event of [1, 2]" class="event">
+    <div class="event-time">
+      17:30
+      <br />
+      Friday
+    </div>
+    <div class="event-title">Sokol-parovi</div>
+  </div>
+</div>
+<div class="chat">
+  <div style="clear: both">
+    <div class="chat-title">Chat</div>
+    <div class="chat-search">
+      <a href="" class="search">Search</a>
+    </div>
+  </div>
+  <div class="group-wrapper">
+    Groups
+    <div class="groups">
+      <div class="group" *ngFor="let g of [1, 2]">
+        <img
+          [src]="'assets/img/group' + 2 + '.png'"
+          class="group-image"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div class="individual">
+    Individual
+    <div class="pms">
+      <div class="pm" *ngFor="let g of [1, 2]">
+        <img [src]="'assets/img/group' + 2 + '.png'" class="pm-image" alt="" />
+        <p class="pm-name">David Razum</p>        
+      </div>
+    </div>
+  </div>
+</div>
